@@ -1,0 +1,16 @@
+
+    import org.junit.runner.RunWith;
+    import cucumber.api.CucumberOptions;
+    import cucumber.api.junit.Cucumber;
+
+
+
+    @RunWith(Cucumber.class)
+    @CucumberOptions(
+            features="E:\\FameWork\\Cucumber\\src\\main\\java\\Features\\lead.feature"
+            ,glue= {"stepDefinations"}
+            ,format= {"pretty","html:test_output","json:json_output/cucumberOutput"}
+            ,dryRun=false
+            ,monochrome=true //display console output in proper readable format
+            )
+
